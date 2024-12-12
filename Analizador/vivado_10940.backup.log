@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Dec 12 13:37:06 2024
-# Process ID: 11284
+# Start of session at: Thu Dec 12 13:17:48 2024
+# Process ID: 10940
 # Current directory: C:/Users/USUARIO/Documents/sed_vivado/Analizador
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5404 C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9900 C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.xpr
 # Log file: C:/Users/USUARIO/Documents/sed_vivado/Analizador/vivado.log
 # Journal file: C:/Users/USUARIO/Documents/sed_vivado/Analizador\vivado.jou
 # Running On        :DESKTOP-3BLCDLP
@@ -19,7 +19,7 @@
 # Host memory       :33635 MB
 # Swap memory       :5100 MB
 # Total Virtual     :38735 MB
-# Available Virtual :27403 MB
+# Available Virtual :27239 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.xpr
@@ -92,8 +92,18 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1613.488 ; gain = 457.957
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1613.371 ; gain = 471.949
 update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sources_1\new\Analizador.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sources_1\new\Analizador.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'tb_Analizador'
@@ -109,137 +119,6 @@ INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USUARIO/Do
 "xvhdl --incr --relax -prj tb_Analizador_vhdl.prj"
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.srcs/sim_1/new/tb_Analizador.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'tb_Analizador'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Analizador_behav xil_defaultlib.tb_Analizador -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Analizador_behav xil_defaultlib.tb_Analizador -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-4940] 'analizador' remains a black box since it has no binding entity [C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.srcs/sim_1/new/tb_Analizador.vhd:37]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture tb of entity xil_defaultlib.tb_analizador
-Built simulation snapshot tb_Analizador_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Analizador_behav -key {Behavioral:sim_1:Functional:tb_Analizador} -tclbatch {tb_Analizador.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_Analizador.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Analizador_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1699.707 ; gain = 34.973
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sources_1\new\Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sources_1\new\Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sources_1\new\Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Analizador'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Analizador' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_Analizador_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.srcs/sim_1/new/tb_Analizador.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_Analizador'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Analizador_behav xil_defaultlib.tb_Analizador -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Analizador_behav xil_defaultlib.tb_Analizador -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-4940] 'analizador' remains a black box since it has no binding entity [C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.srcs/sim_1/new/tb_Analizador.vhd:37]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture tb of entity xil_defaultlib.tb_analizador
-Built simulation snapshot tb_Analizador_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Analizador_behav -key {Behavioral:sim_1:Functional:tb_Analizador} -tclbatch {tb_Analizador.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_Analizador.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Analizador_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2727.273 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Analizador'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Analizador' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_Analizador_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.srcs/sources_1/new/Analizador.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Analizador'
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
@@ -250,165 +129,12 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Analizador_behav xil_defaultlib.tb_Analizador -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.Analizador [analizador_default]
-Compiling architecture tb of entity xil_defaultlib.tb_analizador
-Built simulation snapshot tb_Analizador_behav
+ERROR: [VRFC 10-718] formal port <subir_bajar> does not exist in entity <Analizador>.  Please compare the definition of block <Analizador> to its component declaration and its instantion to detect the mismatch. [C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.srcs/sim_1/new/tb_Analizador.vhd:16]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_analizador in library work failed.
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Analizador_behav -key {Behavioral:sim_1:Functional:tb_Analizador} -tclbatch {tb_Analizador.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-source tb_Analizador.tcl
-INFO: [Common 17-344] 'xsim' was cancelled
-INFO: [Vivado 12-5357] 'simulate' step aborted
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2727.273 ; gain = 0.000
-INFO: [Common 17-344] 'launch_simulation' was cancelled
-update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sources_1\new\Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sources_1\new\Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Analizador'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Analizador' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_Analizador_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.srcs/sim_1/new/tb_Analizador.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_Analizador'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Analizador_behav xil_defaultlib.tb_Analizador -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Analizador_behav xil_defaultlib.tb_Analizador -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.Analizador [analizador_default]
-Compiling architecture tb of entity xil_defaultlib.tb_analizador
-Built simulation snapshot tb_Analizador_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Analizador_behav -key {Behavioral:sim_1:Functional:tb_Analizador} -tclbatch {tb_Analizador.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_Analizador.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Analizador_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2727.273 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sources_1\new\Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USUARIO\Documents\sed_vivado\Analizador\Analizador.srcs\sim_1\new\tb_Analizador.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Analizador'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Analizador' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_Analizador_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.srcs/sim_1/new/tb_Analizador.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_Analizador'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Analizador_behav xil_defaultlib.tb_Analizador -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Analizador_behav xil_defaultlib.tb_Analizador -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.Analizador [analizador_default]
-Compiling architecture tb of entity xil_defaultlib.tb_analizador
-Built simulation snapshot tb_Analizador_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Analizador_behav -key {Behavioral:sim_1:Functional:tb_Analizador} -tclbatch {tb_Analizador.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_Analizador.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Analizador_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2758.590 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+INFO: [USF-XSim-99] Step results log file:'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/USUARIO/Documents/sed_vivado/Analizador/Analizador.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 13:47:48 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 13:22:00 2024...

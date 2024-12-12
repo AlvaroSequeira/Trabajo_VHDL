@@ -1,6 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.numeric_std.all;
+use IEEE.numeric_std.ALL;
 
 entity Analizador is
 PORT(
@@ -10,24 +10,25 @@ PORT(
     ED_4: in std_logic;
     ED_5: in std_logic;
     CLK: in std_logic;
+    subir_bajar: out std_logic;
     piso: out std_logic_vector(2 downto 0)
     );
 end Analizador;
 
 architecture Behavioral of Analizador is
-    signal P: std_logic_vector(2 downto 0) := "000"; -- Variable P para utilizarla como un sensor de posición que me dice en que piso está el ascensor, inicializada en "000"
+    signal P: std_logic_vector(2 downto 0) := "000"; -- Variable P para utilizarla como un sensor de posición que me dice en qué piso está el ascensor, inicializada en "000"
     signal piso_1: std_logic_vector(2 downto 0);
     signal piso_2: std_logic_vector(2 downto 0);
     signal piso_3: std_logic_vector(2 downto 0);
     signal piso_4: std_logic_vector(2 downto 0);
     signal piso_5: std_logic_vector(2 downto 0);
-    signal vector_almacenar: std_logic_vector(14 downto 0); --donde se almacenan todas las soicitudes de piso
+    signal vector_almacenar: std_logic_vector(14 downto 0); -- donde se almacenan todas las solicitudes de piso
 begin
 
     process (CLK, ED_1, ED_2, ED_3, ED_4, ED_5)
         variable max_dist: integer := 6; -- Máxima distancia posible (3 bits) dentro de los pisos que tenemos 1 al 5 sin contar el 000
         variable distancia: integer;
-        variable piso_cercano: std_logic_vector(2 downto 0) := "000"; --piso al que se quiere ir mas cercano a P
+        variable piso_cercano: std_logic_vector(2 downto 0) := "000"; -- piso al que se quiere ir más cercano a P
         variable temp_vector: std_logic_vector(14 downto 0) := (others => '0'); -- Vector temporal
         variable tam: integer := 0; 
         variable contador_piso: integer := 0; -- Contador de pisos diferentes de "000"
@@ -142,9 +143,14 @@ begin
 
             -- Asignar el piso más cercano a la salida
             piso <= piso_cercano; -- Suponiendo que piso_out es el puerto de salida declarado en la entidad
+
+            -- Lógica para determinar subir_bajar
+            if to_integer(unsigned(piso_cercano)) > to_integer(unsigned(P)) then
+                subir_bajar <= '1'; -- Si el piso cercano es superior a P
+            else
+                subir_bajar <= '0'; -- Si el piso cercano es menor o igual a P
+            end if;
         end if;
     end process;
 
 end Behavioral;
-
-
