@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Analizador.srcs/sources_1/new/Analizador.vhd" \
+"../../../../Analizador.srcs/sim_1/new/tb_Analizador.vhd" \
+
+# Do not sort compile order
+nosort
