@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Motor.srcs/sources_1/new/Motor.vhd" \
+"../../../../Motor.srcs/sim_1/new/tb_motor.vhd" \
+
+# Do not sort compile order
+nosort

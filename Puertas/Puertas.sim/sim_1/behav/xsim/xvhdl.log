@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/USUARIO/Documents/sed_vivado/Puertas/Puertas.srcs/sources_1/new/Puertas.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Puertas'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/USUARIO/Documents/sed_vivado/Puertas/Puertas.srcs/sim_1/new/tb_puertas.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Puertas'

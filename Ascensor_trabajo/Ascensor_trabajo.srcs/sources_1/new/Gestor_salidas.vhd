@@ -10,10 +10,12 @@ PORT(
     situacion_motor: in std_logic_vector(1 downto 0);
     puertas_in: in std_logic;
     displays_piso: in std_logic_vector( 2 downto 0);
+    digsel: in std_logic;
     act_motor: out std_logic_vector (1 downto 0);
     CLK: in std_logic;
+    digctrl: out std_logic;
     accion: out std_logic;
-    piso_out: out std_logic_vector(1 downto 0)
+    piso_out: out std_logic_vector(2 downto 0)
 );
 end Gestor_salidas;
 
@@ -37,10 +39,13 @@ COMPONENT Piso
 PORT(
     displays_piso: in std_logic_vector(2 downto 0);
     CLK: in std_logic;
-    piso_out: out std_logic_vector (1 downto 0)
+    piso_out: out std_logic_vector (2 downto 0)
 );
 END COMPONENT;
 begin
+
+digctrl<= NOT (digsel); 
+
 Inst_Motor: Motor
 PORT MAP(
     situacion_motor => situacion_motor,

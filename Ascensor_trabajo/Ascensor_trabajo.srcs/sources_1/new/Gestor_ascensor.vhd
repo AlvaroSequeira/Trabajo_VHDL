@@ -51,6 +51,8 @@ end Gestor_ascensor;
 architecture Behavioral of Gestor_ascensor is
 signal abrir_cerrar : std_logic;
 signal temp_out : std_logic;
+signal subir_bajar: std_logic;
+signal piso: std_logic_vector( 2 downto 0);
 
 COMPONENT Analizador
 PORT(
@@ -59,6 +61,7 @@ PORT(
     ED_3: in std_logic;
     ED_4: in std_logic;
     ED_5: in std_logic;
+    subir_bajar: out std_logic;
     piso: out std_logic_vector(2 downto 0)
 );
 END COMPONENT;
@@ -75,8 +78,9 @@ PORT(
     sensor_pos: in std_logic;
     sensor_puertas: in std_logic;
     EMER: in std_logic;
-    piso: in std_logic;
+    piso: in std_logic_vector(2 downto 0);
     CLK: in std_logic;
+    subir_bajar: in std_logic;
     abrir_cerrar: out std_logic;
     situacion_motor: out std_logic_vector(1 downto 0);
     puertas: out std_logic;
@@ -92,6 +96,7 @@ PORT MAP(
     ED_3 => ED_3,
     ED_4 => ED_4,
     ED_5 => ED_5,
+    subir_bajar => subir_bajar,
     piso => piso
     
 );
@@ -105,7 +110,8 @@ Inst_FSM: FSM
 PORT MAP(
     piso => piso,
     sensor_pos => sensor_pos,
-    snesor_puertas => sensor_puertas,
+    sensor_puertas => sensor_puertas,
+    subir_bajar => subir_bajar,
     EMER => EMER,
     CLK => CLK,
     temp_out => temp_out,
